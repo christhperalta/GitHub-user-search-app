@@ -1,0 +1,20 @@
+.Layout {
+  @include mq-desktop {
+    max-width: 45.625rem;
+  }
+
+  @include mq-tablet {
+    width: 91%;
+    margin: 0 auto;
+    padding-top: 8.75rem;
+    padding-bottom: 14.75rem;
+    max-width: 35.8125rem;
+  }
+
+  @include mq-mobile {
+    padding-top: 31px;
+    padding-bottom: 4.9375re
+    m;
+    max-width: 31.25rem;
+  }
+}

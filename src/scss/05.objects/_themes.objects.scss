@@ -1,0 +1,60 @@
+// Light mode
+
+.theme-light {
+  background-color: $color-6;
+  color: $color-3;
+
+  .Header-logo {
+    color: $color-10;
+  }
+
+  .Main-profile {
+    background-color: $color-6;
+  }
+
+  .Main-article-h2,
+  .Main-profile-p {
+    color: $color-4;
+  }
+
+  .Form-input::placeholder {
+    color: $color-3;
+  }
+
+  .Form-btn {
+    background-color: $color-1;
+  }
+
+  .Form-form,
+  .Main-div {
+    background-color: $color-7;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  }
+}
+
+// Dark mode
+
+.theme-dark {
+  background-color: $color-8;
+  color: $color-7;
+
+  .Main-profile {
+    background-color: $color-8;
+  }
+
+  .Main-article-h2,
+  .Main-profile-p,
+  .Header-logo,
+  .Form-input::placeholder {
+    color: $color-7;
+  }
+
+  .Form-btn {
+    background-color: $color-1;
+  }
+
+  .Form-form,
+  .Main-div {
+    background-color: $color-9;
+  }
+}

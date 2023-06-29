@@ -1,8 +1,17 @@
+import Container from "./components/Container";
+import Header from "./components/Header";
+import Layout from "./components/Layout";
+import Main from "./components/Main";
+
 function App() {
+
   return (
-    <>
-     <h1>Hola mundo</h1>
-    </>
+    <Container >
+      <Layout>
+        <Header/>
+        <Main />
+      </Layout>
+    </Container>
   );
 }
 

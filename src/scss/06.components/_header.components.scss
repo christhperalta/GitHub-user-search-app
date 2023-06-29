@@ -1,0 +1,27 @@
+.Header {
+
+  
+     display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.25rem;
+
+
+  &-logo{
+    font-size: 1.625rem;
+    font-weight: 700;
+  }
+
+
+  &-div {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &-button{
+    font-size: .8125rem;
+    font-weight: 700;
+    letter-spacing: .1563rem;
+  }
+
+}

@@ -1,0 +1,18 @@
+@mixin mq-desktop {
+  @media screen and (min-width: 64.0625rem) {
+    @content;
+  }
+}
+
+@mixin mq-tablet {
+  @media screen  and (max-width: 64rem) {
+    
+    @content;
+  }
+}
+
+@mixin mq-mobile {
+  @media screen and (max-width: 37.5rem) {
+    @content;
+  }
+}

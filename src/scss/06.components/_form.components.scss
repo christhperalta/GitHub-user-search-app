@@ -1,0 +1,69 @@
+.Form{
+    
+     &-form {
+    display: grid;
+    grid-template-columns: 1fr 6.625rem;
+    grid-auto-rows: 3.125rem;
+    column-gap: 0.4375rem;
+    border-radius: .9375rem;
+    margin-bottom: 1rem;
+    padding: .5938rem .625rem .5938rem 2rem;
+
+    
+  }
+
+  &-label {
+    display: grid;
+    grid-template-columns: 23px 1fr;
+    column-gap: 1.4963rem;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  &-btn{
+    border-radius: .625rem;
+    color:$color-7 ;
+    font-size: 1rem;
+    font-weight: 700;
+
+  }
+
+  &-input{
+    width: 100%;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    outline: none;
+  }
+
+  
+
+  &-search {
+    transform: scale(0.8);
+  }
+
+
+  @include mq-mobile{
+     &-form {
+    grid-template-columns: 1fr 5.25rem;
+    grid-auto-rows: 2.875rem;
+    padding: .4063rem .4375rem .4688rem 1rem;  
+  }
+
+  &-label {
+    column-gap:.5594rem;
+  }
+
+  &-btn{
+    font-size: .875rem;
+  }
+
+  &-input{
+    font-size: .8125rem;
+    line-height: 1.5625rem;
+  }
+  }
+
+}
+
+
