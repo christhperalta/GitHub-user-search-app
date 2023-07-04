@@ -20,7 +20,7 @@ function Logo() {
 function ThemeButton({ theme, onClickToggle }) {
   return (
     <button className='Header-button' onClick={() => onClickToggle()}>
-      <span>{theme ? "LIGHT" : "DARK"}</span>
+      <span>{theme ? "DARK" : "LIGHT"}</span>
       {theme ? <Icon name='sun' /> : <Icon name='moon' />}
     </button>
   );
