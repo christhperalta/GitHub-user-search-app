@@ -21,7 +21,7 @@ function ThemeButton({ theme, onClickToggle }) {
   return (
     <button className='Header-button' onClick={() => onClickToggle()}>
       <span>{theme ? "DARK" : "LIGHT"}</span>
-      {theme ? <Icon name='sun' /> : <Icon name='moon' />}
+      {theme ? <Icon name='moon' /> : <Icon name='sun' />}
     </button>
   );
 }
