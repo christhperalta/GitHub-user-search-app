@@ -28,5 +28,4 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [Christh Peralta](https://www.frontendmentor.io/home)
