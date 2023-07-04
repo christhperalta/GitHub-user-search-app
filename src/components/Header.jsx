@@ -1,5 +1,4 @@
 import { useContext } from "react";
-
 import Icon from "./Icon";
 import { ThemeContext } from "../provider/ThemeContext";
 
@@ -20,11 +19,9 @@ function Logo() {
 
 function ThemeButton({ theme, onClickToggle }) {
   return (
-    <div className='Header-div'>
-      <button className='Header-button' onClick={() => onClickToggle()}>
-        {theme ? "LIGHT" : "DARK"}
-      </button>
+    <button className='Header-button' onClick={() => onClickToggle()}>
+      <span>{theme ? "LIGHT" : "DARK"}</span>
       {theme ? <Icon name='sun' /> : <Icon name='moon' />}
-    </div>
+    </button>
   );
 }

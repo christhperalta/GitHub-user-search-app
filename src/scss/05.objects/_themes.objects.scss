@@ -8,10 +8,17 @@
     color: $color-10;
   }
 
+  .Header-button:hover{
+    transition: .3s ease-in-out;
+    color:$color-10;
+  }
+
+  .Loader-container,
   .Main-profile {
     background-color: $color-6;
   }
 
+  .Loader,
   .Main-article-h2,
   .Main-profile-p {
     color: $color-4;
@@ -25,7 +32,7 @@
     background-color: $color-1;
   }
 
-  .Form-form,
+  .Form,
   .Main-div {
     background-color: $color-7;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
@@ -38,10 +45,17 @@
   background-color: $color-8;
   color: $color-7;
 
+   .Header-button:hover{
+    transition: .3s ease-in-out;
+    color:#90A4D4;
+  }
+
+  .Loader-container,
   .Main-profile {
     background-color: $color-8;
   }
-
+  
+  .Loader,
   .Main-article-h2,
   .Main-profile-p,
   .Header-logo,
@@ -53,7 +67,9 @@
     background-color: $color-1;
   }
 
-  .Form-form,
+  
+
+  .Form,
   .Main-div {
     background-color: $color-9;
   }

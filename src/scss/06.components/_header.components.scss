@@ -6,6 +6,7 @@
   align-items: center;
   margin-bottom: 2.25rem;
 
+  
 
   &-logo{
     font-size: 1.625rem;
@@ -13,15 +14,16 @@
   }
 
 
-  &-div {
-    display: flex;
-    gap: 1rem;
-  }
 
   &-button{
+    display: flex;
+    
+    gap: 1rem;
+    transition: .3s ease-in-out;
     font-size: .8125rem;
     font-weight: 700;
     letter-spacing: .1563rem;
+    cursor: pointer;
   }
 
 }

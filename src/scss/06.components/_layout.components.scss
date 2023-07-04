@@ -1,5 +1,6 @@
 .Layout {
   @include mq-desktop {
+    width: 100%;
     max-width: 45.625rem;
   }
 
@@ -13,8 +14,7 @@
 
   @include mq-mobile {
     padding-top: 31px;
-    padding-bottom: 4.9375re
-    m;
+    padding-bottom: 4.9375rem;
     max-width: 31.25rem;
   }
 }

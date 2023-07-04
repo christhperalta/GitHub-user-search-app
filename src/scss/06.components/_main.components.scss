@@ -1,24 +1,25 @@
 .Main {
-
   @include mq-desktop {
     &-div {
       display: grid;
-      grid-template-columns: 117px repeat(2,1fr);
-      padding: 2.0625rem 1.5rem 3.0625rem 1.5rem;
+      grid-template-columns: 117px repeat(2, 1fr);
       border-radius: 0.9375rem;
       column-gap: 2.5625rem;
+      padding: 2.75rem 3rem 3rem 3rem;
     }
 
     &-img {
       grid-column: 1/2;
-      grid-row: 1/2;
+      grid-row: 1/3;
+      border-radius: 117px;
     }
 
     &-article {
       grid-column: 2/4;
       grid-row: 1/2;
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: 1fr 12.5rem;
+      align-items: center;
     }
 
     &-article-h2 {
@@ -38,16 +39,16 @@
     }
 
     &-article-p-joined {
+      justify-self:end;
       grid-column: 2/3;
       grid-row: 1/2;
       font-size: 0.9375rem;
-
     }
 
     &-p {
       grid-column: 2/4;
-      grid-row: 3/4;
-      margin-top: 1.5rem;
+      grid-row: 2/3;
+      margin-top: 1rem;
       margin-bottom: 2rem;
       font-size: 0.9375rem;
       line-height: 1.5625rem;
@@ -63,10 +64,9 @@
       border-radius: 0.625rem;
     }
 
-
     &-profile-h5 {
-      font-size: .8125rem;
-      margin-bottom: .0625rem;
+      font-size: 0.8125rem;
+      margin-bottom: 0.0625rem;
     }
 
     &-profile-p {
@@ -78,12 +78,12 @@
       grid-column: 2/4;
       grid-row: 5/6;
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
       row-gap: 1.0625rem;
     }
 
     &-social-span {
-      font-size: .9375rem;
+      font-size: 0.9375rem;
     }
 
     &-social-li {
@@ -93,28 +93,26 @@
       column-gap: 1.2031rem;
     }
 
-    &-social-li:first-child{
+    &-social-li:first-child {
       grid-column: 1/2;
       grid-row: 1/2;
     }
 
-     &-social-li:nth-child(2){
+    &-social-li:nth-child(2) {
       grid-column: 1/2;
       grid-row: 2/3;
+      
     }
 
-     &-social-li:nth-child(3){
+    &-social-li:nth-child(3) {
       grid-column: 2/3;
       grid-row: 1/2;
-
     }
 
-    &-social-li:nth-child(4){
+    &-social-li:nth-child(4) {
       grid-column: 2/3;
       grid-row: 2/3;
-
     }
-
   }
 
   @include mq-tablet {
@@ -129,6 +127,8 @@
     &-img {
       grid-column: 1/2;
       grid-row: 1/2;
+      border-radius: 117px;
+
     }
 
     &-article {
@@ -150,7 +150,6 @@
 
     &-article-p-joined {
       font-size: 0.9375rem;
-
     }
 
     &-p {
@@ -168,14 +167,13 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       margin-bottom: 1.875rem;
-      padding: .9375rem 6rem 1.0625rem 2rem ;
+      padding: 0.9375rem 6rem 1.0625rem 2rem;
       border-radius: 0.625rem;
     }
 
-
     &-profile-h5 {
-      font-size: .8125rem;
-      margin-bottom: .0625rem;
+      font-size: 0.8125rem;
+      margin-bottom: 0.0625rem;
     }
 
     &-profile-p {
@@ -187,12 +185,12 @@
       grid-column: 1/3;
       grid-row: 5/6;
       display: grid;
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
       row-gap: 1.0625rem;
     }
 
     &-social-span {
-      font-size: .9375rem;
+      font-size: 0.9375rem;
     }
 
     &-social-li {
@@ -202,28 +200,25 @@
       column-gap: 1.2031rem;
     }
 
-    &-social-li:first-child{
+    &-social-li:first-child {
       grid-column: 1/2;
       grid-row: 1/2;
     }
 
-     &-social-li:nth-child(2){
+    &-social-li:nth-child(2) {
       grid-column: 1/2;
       grid-row: 2/3;
     }
 
-     &-social-li:nth-child(3){
+    &-social-li:nth-child(3) {
       grid-column: 2/3;
       grid-row: 1/2;
-
     }
 
-    &-social-li:nth-child(4){
+    &-social-li:nth-child(4) {
       grid-column: 2/3;
       grid-row: 2/3;
-
     }
-
   }
 
   @include mq-mobile {
@@ -242,7 +237,6 @@
     &-article {
       grid-column: 2/3;
       grid-row: 1/2;
-      margin-bottom: 2.125rem;
     }
 
     &-article-h2 {
@@ -257,12 +251,11 @@
 
     &-article-p-joined {
       font-size: 0.8125rem;
-
     }
 
     &-p {
       grid-column: 1/3;
-      grid-row: 3/4;
+      grid-row: 2/3;
       margin-bottom: 1.4375rem;
       font-size: 0.8125rem;
       line-height: 1.5625rem;
@@ -310,26 +303,24 @@
       align-items: center;
       column-gap: 1.2031rem;
     }
-     &-social-li:first-child{
+    &-social-li:first-child {
       grid-column: 1;
       grid-row: 1;
     }
 
-     &-social-li:nth-child(2){
+    &-social-li:nth-child(2) {
       grid-column: 1;
       grid-row: 2;
     }
 
-     &-social-li:nth-child(3){
+    &-social-li:nth-child(3) {
       grid-column: 1;
       grid-row: 3;
-
     }
 
-    &-social-li:nth-child(4){
+    &-social-li:nth-child(4) {
       grid-column: 1;
       grid-row: 4;
-
     }
   }
 }

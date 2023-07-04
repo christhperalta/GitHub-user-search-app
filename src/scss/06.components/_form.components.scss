@@ -1,15 +1,22 @@
-.Form{
-    
-     &-form {
-    display: grid;
-    grid-template-columns: 1fr 6.625rem;
-    grid-auto-rows: 3.125rem;
-    column-gap: 0.4375rem;
-    border-radius: .9375rem;
-    margin-bottom: 1rem;
-    padding: .5938rem .625rem .5938rem 2rem;
+.Form {
+  position: relative;
 
-    
+  display: grid;
+  grid-template-columns: 1fr 6.625rem;
+  grid-auto-rows: 3.125rem;
+  column-gap: 0.4375rem;
+  border-radius: 0.9375rem;
+  margin-bottom: 1rem;
+  padding: 0.5938rem 0.625rem 0.5938rem 2rem;
+
+  &-error {
+    position: absolute;
+    color: #f74646;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    right: 130px;
+    top: 24px;
+    z-index: 20;
   }
 
   &-label {
@@ -20,50 +27,56 @@
     width: 100%;
   }
 
-
-  &-btn{
-    border-radius: .625rem;
-    color:$color-7 ;
+  &-btn {
+    border-radius: 0.625rem;
+    color: $color-7;
     font-size: 1rem;
     font-weight: 700;
-
   }
 
-  &-input{
+  &-input {
     width: 100%;
+    caret-color: $color-1;
     font-size: 1.125rem;
     line-height: 1.5625rem;
     outline: none;
   }
 
-  
-
   &-search {
     transform: scale(0.8);
   }
 
+  @include mq-desktop {
+    &-btn {
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
 
-  @include mq-mobile{
-     &-form {
+    &-btn:hover {
+      background-color: #60abff;
+    }
+
+    &-form {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @include mq-mobile {
     grid-template-columns: 1fr 5.25rem;
     grid-auto-rows: 2.875rem;
-    padding: .4063rem .4375rem .4688rem 1rem;  
-  }
+    padding: 0.4063rem 0.4375rem 0.4688rem 1rem;
 
-  &-label {
-    column-gap:.5594rem;
-  }
+    &-label {
+      column-gap: 0.5594rem;
+    }
 
-  &-btn{
-    font-size: .875rem;
-  }
+    &-btn {
+      font-size: 0.875rem;
+    }
 
-  &-input{
-    font-size: .8125rem;
-    line-height: 1.5625rem;
+    &-input {
+      font-size: 0.8125rem;
+      line-height: 1.5625rem;
+    }
   }
-  }
-
 }
-
-
