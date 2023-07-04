@@ -1,29 +1,23 @@
 .Header {
-
-  
-     display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   margin-bottom: 2.25rem;
 
-  
-
-  &-logo{
+  &-logo {
     font-size: 1.625rem;
     font-weight: 700;
   }
 
-
-
-  &-button{
+  &-button {
     display: flex;
-    
+    max-width: 5.5625rem;
     gap: 1rem;
-    transition: .3s ease-in-out;
-    font-size: .8125rem;
+    transition: 0.3s ease-in-out;
+    font-size: 0.8125rem;
     font-weight: 700;
-    letter-spacing: .1563rem;
+    letter-spacing: 0.1563rem;
     cursor: pointer;
   }
-
 }

@@ -11,7 +11,7 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://christhperalta.github.io/GitHub-user-search-app/](https://christhperalta.github.io/GitHub-user-search-app/)
 
 ## My process
 
