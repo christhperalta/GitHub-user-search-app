@@ -47,6 +47,8 @@
   }
 
   @include mq-desktop {
+  margin-bottom: 1.5rem;
+
     &-btn {
       cursor: pointer;
       transition: 0.3s ease-in-out;
